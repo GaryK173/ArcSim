@@ -1,0 +1,18 @@
+C:\Unreal Projects\ArcSim\Plugins\RuntimeAudioImporter\Intermediate\Build\Win64\UE4Editor\Development\RuntimeAudioImporter\Definitions.RuntimeAudioImporter.h
+C:/Unreal Projects/ArcSim/Plugins/RuntimeAudioImporter/Intermediate/Build/Win64/UE4Editor/Inc/RuntimeAudioImporter/ImportedSoundWave.gen.cpp
+C:\EpicGames\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
+C:\EpicGames\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
+C:\Unreal Projects\ArcSim\Plugins\RuntimeAudioImporter\Source\RuntimeAudioImporter/Public/ImportedSoundWave.h
+C:\Unreal Projects\ArcSim\Plugins\RuntimeAudioImporter\Source\RuntimeAudioImporter\Public\RuntimeAudioImporterTypes.h
+C:\Unreal Projects\ArcSim\Plugins\RuntimeAudioImporter\Intermediate\Build\Win64\UE4Editor\Inc\RuntimeAudioImporter\RuntimeAudioImporterTypes.generated.h
+C:\EpicGames\UE_4.27\Engine\Source\Runtime\Engine\Classes\Sound/SoundWaveProcedural.h
+C:\EpicGames\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\SoundWaveProcedural.generated.h
+C:\Unreal Projects\ArcSim\Plugins\RuntimeAudioImporter\Intermediate\Build\Win64\UE4Editor\Inc\RuntimeAudioImporter\ImportedSoundWave.generated.h
+C:/Unreal Projects/ArcSim/Plugins/RuntimeAudioImporter/Intermediate/Build/Win64/UE4Editor/Inc/RuntimeAudioImporter/PreImportedSoundAsset.gen.cpp
+C:\Unreal Projects\ArcSim\Plugins\RuntimeAudioImporter\Source\RuntimeAudioImporter/Public/PreImportedSoundAsset.h
+C:\Unreal Projects\ArcSim\Plugins\RuntimeAudioImporter\Intermediate\Build\Win64\UE4Editor\Inc\RuntimeAudioImporter\PreImportedSoundAsset.generated.h
+C:/Unreal Projects/ArcSim/Plugins/RuntimeAudioImporter/Intermediate/Build/Win64/UE4Editor/Inc/RuntimeAudioImporter/RuntimeAudioImporter.init.gen.cpp
+C:/Unreal Projects/ArcSim/Plugins/RuntimeAudioImporter/Intermediate/Build/Win64/UE4Editor/Inc/RuntimeAudioImporter/RuntimeAudioImporterLibrary.gen.cpp
+C:\Unreal Projects\ArcSim\Plugins\RuntimeAudioImporter\Source\RuntimeAudioImporter/Public/RuntimeAudioImporterLibrary.h
+C:\Unreal Projects\ArcSim\Plugins\RuntimeAudioImporter\Intermediate\Build\Win64\UE4Editor\Inc\RuntimeAudioImporter\RuntimeAudioImporterLibrary.generated.h
+C:/Unreal Projects/ArcSim/Plugins/RuntimeAudioImporter/Intermediate/Build/Win64/UE4Editor/Inc/RuntimeAudioImporter/RuntimeAudioImporterTypes.gen.cpp

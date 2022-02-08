@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\ArcSim.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{07CE9828-B64B-4EFA-8E6C-5FA7D40460B7}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\ArcSim.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\ArcSimEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{22BC57CC-059D-4D60-8E77-AADB5050278B}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Plugins">
+      <UniqueIdentifier>{609F43DF-E0B5-4131-9FA2-61A2CF49DCA3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\RuntimeAudioImporter">
+      <UniqueIdentifier>{B4255866-E578-4FE2-B117-AFB2144C1737}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\RuntimeAudioImporter\Source">
+      <UniqueIdentifier>{E71708F0-EF16-4C7A-AF0D-8E0920D94A79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\RuntimeAudioImporter\Source\RuntimeAudioImporter">
+      <UniqueIdentifier>{2CD32F1F-0241-4319-B1F0-40039CDE4024}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\RuntimeAudioImporter\Source\RuntimeAudioImporter\RuntimeAudioImporter.Build.cs">
+      <Filter>Plugins\RuntimeAudioImporter\Source\RuntimeAudioImporter</Filter>
+    </None>
+    <Filter Include="Plugins\RuntimeAudioImporter\Source\RuntimeAudioImporter\Private">
+      <UniqueIdentifier>{F9390E6A-BA02-4860-B094-8BF40536966B}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Plugins\RuntimeAudioImporter\Source\RuntimeAudioImporter\Private\ImportedSoundWave.cpp">
+      <Filter>Plugins\RuntimeAudioImporter\Source\RuntimeAudioImporter\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\RuntimeAudioImporter\Source\RuntimeAudioImporter\Private\PreImportedSoundAsset.cpp">
+      <Filter>Plugins\RuntimeAudioImporter\Source\RuntimeAudioImporter\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\RuntimeAudioImporter\Source\RuntimeAudioImporter\Private\RuntimeAudioImporter.cpp">
+      <Filter>Plugins\RuntimeAudioImporter\Source\RuntimeAudioImporter\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\RuntimeAudioImporter\Source\RuntimeAudioImporter\Private\RuntimeAudioImporterLibrary.cpp">
+      <Filter>Plugins\RuntimeAudioImporter\Source\RuntimeAudioImporter\Private</Filter>
+    </ClCompile>
+    <Filter Include="Plugins\RuntimeAudioImporter\Source\RuntimeAudioImporter\Private\Transcoders">
+      <UniqueIdentifier>{89CD0E0A-CD25-460A-A560-CD67399179FD}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Plugins\RuntimeAudioImporter\Source\RuntimeAudioImporter\Private\Transcoders\FLACTranscoder.cpp">
+      <Filter>Plugins\RuntimeAudioImporter\Source\RuntimeAudioImporter\Private\Transcoders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\RuntimeAudioImporter\Source\RuntimeAudioImporter\Private\Transcoders\MP3Transcoder.cpp">
+      <Filter>Plugins\RuntimeAudioImporter\Source\RuntimeAudioImporter\Private\Transcoders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\RuntimeAudioImporter\Source\RuntimeAudioImporter\Private\Transcoders\RAWTranscoder.cpp">
+      <Filter>Plugins\RuntimeAudioImporter\Source\RuntimeAudioImporter\Private\Transcoders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\RuntimeAudioImporter\Source\RuntimeAudioImporter\Private\Transcoders\VorbisTranscoder.cpp">
+      <Filter>Plugins\RuntimeAudioImporter\Source\RuntimeAudioImporter\Private\Transcoders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\RuntimeAudioImporter\Source\RuntimeAudioImporter\Private\Transcoders\WAVTranscoder.cpp">
+      <Filter>Plugins\RuntimeAudioImporter\Source\RuntimeAudioImporter\Private\Transcoders</Filter>
+    </ClCompile>
+    <Filter Include="Plugins\RuntimeAudioImporter\Source\RuntimeAudioImporter\Public">
+      <UniqueIdentifier>{C90E8300-A144-44EC-9E15-29CDD8356148}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Plugins\RuntimeAudioImporter\Source\RuntimeAudioImporter\Public\ImportedSoundWave.h">
+      <Filter>Plugins\RuntimeAudioImporter\Source\RuntimeAudioImporter\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\RuntimeAudioImporter\Source\RuntimeAudioImporter\Public\PreImportedSoundAsset.h">
+      <Filter>Plugins\RuntimeAudioImporter\Source\RuntimeAudioImporter\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\RuntimeAudioImporter\Source\RuntimeAudioImporter\Public\RuntimeAudioImporter.h">
+      <Filter>Plugins\RuntimeAudioImporter\Source\RuntimeAudioImporter\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\RuntimeAudioImporter\Source\RuntimeAudioImporter\Public\RuntimeAudioImporterDefines.h">
+      <Filter>Plugins\RuntimeAudioImporter\Source\RuntimeAudioImporter\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\RuntimeAudioImporter\Source\RuntimeAudioImporter\Public\RuntimeAudioImporterIncludes.h">
+      <Filter>Plugins\RuntimeAudioImporter\Source\RuntimeAudioImporter\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\RuntimeAudioImporter\Source\RuntimeAudioImporter\Public\RuntimeAudioImporterLibrary.h">
+      <Filter>Plugins\RuntimeAudioImporter\Source\RuntimeAudioImporter\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\RuntimeAudioImporter\Source\RuntimeAudioImporter\Public\RuntimeAudioImporterTypes.h">
+      <Filter>Plugins\RuntimeAudioImporter\Source\RuntimeAudioImporter\Public</Filter>
+    </ClInclude>
+    <Filter Include="Plugins\RuntimeAudioImporter\Source\RuntimeAudioImporter\Public\Transcoders">
+      <UniqueIdentifier>{33BF54DA-592E-44A2-A263-0D659DA432CB}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Plugins\RuntimeAudioImporter\Source\RuntimeAudioImporter\Public\Transcoders\FLACTranscoder.h">
+      <Filter>Plugins\RuntimeAudioImporter\Source\RuntimeAudioImporter\Public\Transcoders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\RuntimeAudioImporter\Source\RuntimeAudioImporter\Public\Transcoders\MP3Transcoder.h">
+      <Filter>Plugins\RuntimeAudioImporter\Source\RuntimeAudioImporter\Public\Transcoders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\RuntimeAudioImporter\Source\RuntimeAudioImporter\Public\Transcoders\RAWTranscoder.h">
+      <Filter>Plugins\RuntimeAudioImporter\Source\RuntimeAudioImporter\Public\Transcoders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\RuntimeAudioImporter\Source\RuntimeAudioImporter\Public\Transcoders\VorbisTranscoder.h">
+      <Filter>Plugins\RuntimeAudioImporter\Source\RuntimeAudioImporter\Public\Transcoders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\RuntimeAudioImporter\Source\RuntimeAudioImporter\Public\Transcoders\WAVTranscoder.h">
+      <Filter>Plugins\RuntimeAudioImporter\Source\RuntimeAudioImporter\Public\Transcoders</Filter>
+    </ClInclude>
+    <None Include="..\..\Plugins\RuntimeAudioImporter\RuntimeAudioImporter.uplugin">
+      <Filter>Plugins\RuntimeAudioImporter</Filter>
+    </None>
+    <Filter Include="Plugins\RuntimeAudioImporter\Resources">
+      <UniqueIdentifier>{14D546BF-F94D-4E1A-9BDC-74ECB1CD1B96}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\RuntimeAudioImporter\Resources\Icon128.png">
+      <Filter>Plugins\RuntimeAudioImporter\Resources</Filter>
+    </None>
+    <Filter Include="Plugins\RuntimeAudioImporter\Source\RuntimeAudioImporterEditor">
+      <UniqueIdentifier>{9B1605F1-480C-4033-A39F-6DF3CED46C34}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\RuntimeAudioImporter\Source\RuntimeAudioImporterEditor\RuntimeAudioImporterEditor.Build.cs">
+      <Filter>Plugins\RuntimeAudioImporter\Source\RuntimeAudioImporterEditor</Filter>
+    </None>
+    <Filter Include="Plugins\RuntimeAudioImporter\Source\RuntimeAudioImporterEditor\Private">
+      <UniqueIdentifier>{4D35F0C1-FD2B-44AA-9C82-11E03C39978A}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Plugins\RuntimeAudioImporter\Source\RuntimeAudioImporterEditor\Private\PreImportedSoundFactory.cpp">
+      <Filter>Plugins\RuntimeAudioImporter\Source\RuntimeAudioImporterEditor\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\RuntimeAudioImporter\Source\RuntimeAudioImporterEditor\Private\RuntimeAudioImporterEditor.cpp">
+      <Filter>Plugins\RuntimeAudioImporter\Source\RuntimeAudioImporterEditor\Private</Filter>
+    </ClCompile>
+    <Filter Include="Plugins\RuntimeAudioImporter\Source\RuntimeAudioImporterEditor\Public">
+      <UniqueIdentifier>{18BE5569-BB91-4B45-8C4E-14874585E727}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Plugins\RuntimeAudioImporter\Source\RuntimeAudioImporterEditor\Public\PreImportedSoundFactory.h">
+      <Filter>Plugins\RuntimeAudioImporter\Source\RuntimeAudioImporterEditor\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\RuntimeAudioImporter\Source\RuntimeAudioImporterEditor\Public\RuntimeAudioImporterEditor.h">
+      <Filter>Plugins\RuntimeAudioImporter\Source\RuntimeAudioImporterEditor\Public</Filter>
+    </ClInclude>
+    <Filter Include="Source\ArcSim">
+      <UniqueIdentifier>{E27A9B2C-96D4-4137-8B1D-25950F81A781}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\ArcSim\ArcSim.Build.cs">
+      <Filter>Source\ArcSim</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\ArcSim\ArcSim.cpp">
+      <Filter>Source\ArcSim</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ArcSim\ArcSim.h">
+      <Filter>Source\ArcSim</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ArcSim\ArcSimGameModeBase.cpp">
+      <Filter>Source\ArcSim</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ArcSim\ArcSimGameModeBase.h">
+      <Filter>Source\ArcSim</Filter>
+    </ClInclude>
+    <Filter Include="Source\ArcSim\GameplayManager">
+      <UniqueIdentifier>{D4A022DD-8C79-496A-9596-5EDA5A385464}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\ArcSim\GameplayManager\ArcAlgoLib.cpp">
+      <Filter>Source\ArcSim\GameplayManager</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ArcSim\GameplayManager\ArcAlgoLib.h">
+      <Filter>Source\ArcSim\GameplayManager</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ArcSim\GameplayManager\ArcConductor.cpp">
+      <Filter>Source\ArcSim\GameplayManager</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ArcSim\GameplayManager\ArcConductor.h">
+      <Filter>Source\ArcSim\GameplayManager</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ArcSim\GameplayManager\ArcFileManager.cpp">
+      <Filter>Source\ArcSim\GameplayManager</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ArcSim\GameplayManager\ArcFileManager.h">
+      <Filter>Source\ArcSim\GameplayManager</Filter>
+    </ClInclude>
+    <Filter Include="Source\ArcSim\NoteRender">
+      <UniqueIdentifier>{33FFAB68-FC68-4B87-B53A-F814F286A928}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\ArcSim\NoteRender\ArcHoldRender.cpp">
+      <Filter>Source\ArcSim\NoteRender</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ArcSim\NoteRender\ArcHoldRender.h">
+      <Filter>Source\ArcSim\NoteRender</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ArcSim\NoteRender\ArcNoteRender.cpp">
+      <Filter>Source\ArcSim\NoteRender</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ArcSim\NoteRender\ArcNoteRender.h">
+      <Filter>Source\ArcSim\NoteRender</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ArcSim\NoteRender\ArcSkyArcRender.cpp">
+      <Filter>Source\ArcSim\NoteRender</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ArcSim\NoteRender\ArcSkyArcRender.h">
+      <Filter>Source\ArcSim\NoteRender</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ArcSim\NoteRender\ArcSkyTapRender.cpp">
+      <Filter>Source\ArcSim\NoteRender</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ArcSim\NoteRender\ArcSkyTapRender.h">
+      <Filter>Source\ArcSim\NoteRender</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ArcSim\NoteRender\ArcTapRender.cpp">
+      <Filter>Source\ArcSim\NoteRender</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ArcSim\NoteRender\ArcTapRender.h">
+      <Filter>Source\ArcSim\NoteRender</Filter>
+    </ClInclude>
+    <Filter Include="Source\ArcSim\Structs">
+      <UniqueIdentifier>{56947C5B-1805-44F1-897E-172399D337A9}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\ArcSim\Structs\ArcColor.h">
+      <Filter>Source\ArcSim\Structs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\ArcSim\Structs\ArcLineType.h">
+      <Filter>Source\ArcSim\Structs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\ArcSim\Structs\ArcTiming.h">
+      <Filter>Source\ArcSim\Structs</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

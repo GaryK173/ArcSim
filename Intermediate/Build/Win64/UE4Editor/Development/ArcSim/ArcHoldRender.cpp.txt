@@ -1,0 +1,42 @@
+C:\Unreal Projects\ArcSim\Intermediate\Build\Win64\UE4Editor\Development\ArcSim\Definitions.ArcSim.h
+C:\Unreal Projects\ArcSim\Source\ArcSim\NoteRender\ArcHoldRender.h
+C:\Unreal Projects\ArcSim\Source\ArcSim\NoteRender\ArcNoteRender.h
+C:\EpicGames\UE_4.27\Engine\Plugins\Runtime\ProceduralMeshComponent\Source\ProceduralMeshComponent\Public\ProceduralMeshComponent.h
+C:\EpicGames\UE_4.27\Engine\Plugins\Runtime\ProceduralMeshComponent\Intermediate\Build\Win64\UE4Editor\Inc\ProceduralMeshComponent\ProceduralMeshComponent.generated.h
+C:\Unreal Projects\ArcSim\Intermediate\Build\Win64\UE4Editor\Inc\ArcSim\ArcNoteRender.generated.h
+C:\Unreal Projects\ArcSim\Intermediate\Build\Win64\UE4Editor\Inc\ArcSim\ArcHoldRender.generated.h
+C:\Unreal Projects\ArcSim\Source\ArcSim/GameplayManager/ArcAlgoLib.h
+C:\Unreal Projects\ArcSim\Source\ArcSim/Structs/ArcLineType.h
+C:\Unreal Projects\ArcSim\Intermediate\Build\Win64\UE4Editor\Inc\ArcSim\ArcLineType.generated.h
+C:\Unreal Projects\ArcSim\Source\ArcSim/GameplayManager/ArcConductor.h
+C:\Unreal Projects\ArcSim\Plugins\RuntimeAudioImporter\Source\RuntimeAudioImporter\Public\RuntimeAudioImporterLibrary.h
+C:\Unreal Projects\ArcSim\Plugins\RuntimeAudioImporter\Source\RuntimeAudioImporter\Public\ImportedSoundWave.h
+C:\Unreal Projects\ArcSim\Plugins\RuntimeAudioImporter\Source\RuntimeAudioImporter\Public\RuntimeAudioImporterTypes.h
+C:\Unreal Projects\ArcSim\Plugins\RuntimeAudioImporter\Intermediate\Build\Win64\UE4Editor\Inc\RuntimeAudioImporter\RuntimeAudioImporterTypes.generated.h
+C:\EpicGames\UE_4.27\Engine\Source\Runtime\Engine\Classes\Sound/SoundWaveProcedural.h
+C:\EpicGames\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\SoundWaveProcedural.generated.h
+C:\Unreal Projects\ArcSim\Plugins\RuntimeAudioImporter\Intermediate\Build\Win64\UE4Editor\Inc\RuntimeAudioImporter\ImportedSoundWave.generated.h
+C:\Unreal Projects\ArcSim\Plugins\RuntimeAudioImporter\Intermediate\Build\Win64\UE4Editor\Inc\RuntimeAudioImporter\RuntimeAudioImporterLibrary.generated.h
+C:\Unreal Projects\ArcSim\Source\ArcSim/NoteRender/ArcTapRender.h
+C:\Unreal Projects\ArcSim\Intermediate\Build\Win64\UE4Editor\Inc\ArcSim\ArcTapRender.generated.h
+C:\Unreal Projects\ArcSim\Source\ArcSim/NoteRender/ArcSkyTapRender.h
+C:\Unreal Projects\ArcSim\Intermediate\Build\Win64\UE4Editor\Inc\ArcSim\ArcSkyTapRender.generated.h
+C:\Unreal Projects\ArcSim\Source\ArcSim/NoteRender/ArcSkyArcRender.h
+C:\Unreal Projects\ArcSim\Source\ArcSim/Structs/ArcColor.h
+C:\Unreal Projects\ArcSim\Intermediate\Build\Win64\UE4Editor\Inc\ArcSim\ArcColor.generated.h
+C:\EpicGames\UE_4.27\Engine\Source\Runtime\Engine\Public\ImageUtils.h
+C:\Unreal Projects\ArcSim\Intermediate\Build\Win64\UE4Editor\Inc\ArcSim\ArcSkyArcRender.generated.h
+C:\Unreal Projects\ArcSim\Source\ArcSim/Structs/ArcTiming.h
+C:\Unreal Projects\ArcSim\Intermediate\Build\Win64\UE4Editor\Inc\ArcSim\ArcTiming.generated.h
+C:\Unreal Projects\ArcSim\Source\ArcSim\GameplayManager\ArcFileManager.h
+C:\EpicGames\UE_4.27\Engine\Source\Runtime\Core\Public\Misc/DefaultValueHelper.h
+C:\EpicGames\UE_4.27\Engine\Source\Runtime\Engine\Classes\Kismet/GameplayStatics.h
+C:\EpicGames\UE_4.27\Engine\Source\Runtime\Engine\Classes\Kismet/KismetSystemLibrary.h
+C:\EpicGames\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/PropertyAccessUtil.h
+C:\EpicGames\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\KismetSystemLibrary.generated.h
+C:\EpicGames\UE_4.27\Engine\Source\Runtime\Engine\Classes\Sound/DialogueTypes.h
+C:\EpicGames\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\DialogueTypes.generated.h
+C:\EpicGames\UE_4.27\Engine\Source\Runtime\Engine\Classes\Kismet\GameplayStaticsTypes.h
+C:\EpicGames\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameplayStaticsTypes.generated.h
+C:\EpicGames\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameplayStatics.generated.h
+C:\Unreal Projects\ArcSim\Intermediate\Build\Win64\UE4Editor\Inc\ArcSim\ArcConductor.generated.h

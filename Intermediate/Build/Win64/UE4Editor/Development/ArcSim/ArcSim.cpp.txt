@@ -1,0 +1,2 @@
+C:\Unreal Projects\ArcSim\Intermediate\Build\Win64\UE4Editor\Development\ArcSim\Definitions.ArcSim.h
+C:\Unreal Projects\ArcSim\Source\ArcSim\ArcSim.h

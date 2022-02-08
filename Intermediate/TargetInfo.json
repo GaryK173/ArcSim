@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "ArcSim",
+			"Path": "C:\\Unreal Projects\\ArcSim\\Source\\ArcSim.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "ArcSimEditor",
+			"Path": "C:\\Unreal Projects\\ArcSim\\Source\\ArcSimEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

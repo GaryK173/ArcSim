@@ -1,0 +1,40 @@
+C:\Unreal Projects\ArcSim\Plugins\RuntimeAudioImporter\Intermediate\Build\Win64\UE4Editor\Development\RuntimeAudioImporter\Definitions.RuntimeAudioImporter.h
+C:/Unreal Projects/ArcSim/Plugins/RuntimeAudioImporter/Source/RuntimeAudioImporter/Private/ImportedSoundWave.cpp
+C:\Unreal Projects\ArcSim\Plugins\RuntimeAudioImporter\Source\RuntimeAudioImporter\Public\ImportedSoundWave.h
+C:\Unreal Projects\ArcSim\Plugins\RuntimeAudioImporter\Source\RuntimeAudioImporter\Public\RuntimeAudioImporterTypes.h
+C:\Unreal Projects\ArcSim\Plugins\RuntimeAudioImporter\Intermediate\Build\Win64\UE4Editor\Inc\RuntimeAudioImporter\RuntimeAudioImporterTypes.generated.h
+C:\EpicGames\UE_4.27\Engine\Source\Runtime\Engine\Classes\Sound/SoundWaveProcedural.h
+C:\EpicGames\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\SoundWaveProcedural.generated.h
+C:\Unreal Projects\ArcSim\Plugins\RuntimeAudioImporter\Intermediate\Build\Win64\UE4Editor\Inc\RuntimeAudioImporter\ImportedSoundWave.generated.h
+C:/Unreal Projects/ArcSim/Plugins/RuntimeAudioImporter/Source/RuntimeAudioImporter/Private/PreImportedSoundAsset.cpp
+C:\Unreal Projects\ArcSim\Plugins\RuntimeAudioImporter\Source\RuntimeAudioImporter\Public\PreImportedSoundAsset.h
+C:\Unreal Projects\ArcSim\Plugins\RuntimeAudioImporter\Intermediate\Build\Win64\UE4Editor\Inc\RuntimeAudioImporter\PreImportedSoundAsset.generated.h
+C:/Unreal Projects/ArcSim/Plugins/RuntimeAudioImporter/Source/RuntimeAudioImporter/Private/RuntimeAudioImporter.cpp
+C:\Unreal Projects\ArcSim\Plugins\RuntimeAudioImporter\Source\RuntimeAudioImporter\Public\RuntimeAudioImporter.h
+C:/Unreal Projects/ArcSim/Plugins/RuntimeAudioImporter/Source/RuntimeAudioImporter/Private/RuntimeAudioImporterLibrary.cpp
+C:\Unreal Projects\ArcSim\Plugins\RuntimeAudioImporter\Source\RuntimeAudioImporter\Public\RuntimeAudioImporterLibrary.h
+C:\Unreal Projects\ArcSim\Plugins\RuntimeAudioImporter\Intermediate\Build\Win64\UE4Editor\Inc\RuntimeAudioImporter\RuntimeAudioImporterLibrary.generated.h
+C:\Unreal Projects\ArcSim\Plugins\RuntimeAudioImporter\Source\RuntimeAudioImporter\Public\Transcoders/FLACTranscoder.h
+C:\Unreal Projects\ArcSim\Plugins\RuntimeAudioImporter\Source\RuntimeAudioImporter\Public\Transcoders/MP3Transcoder.h
+C:\Unreal Projects\ArcSim\Plugins\RuntimeAudioImporter\Source\RuntimeAudioImporter\Public\Transcoders/VorbisTranscoder.h
+C:\Unreal Projects\ArcSim\Plugins\RuntimeAudioImporter\Source\RuntimeAudioImporter\Public\Transcoders/RAWTranscoder.h
+C:\Unreal Projects\ArcSim\Plugins\RuntimeAudioImporter\Source\RuntimeAudioImporter\Public\Transcoders/WAVTranscoder.h
+C:/Unreal Projects/ArcSim/Plugins/RuntimeAudioImporter/Source/RuntimeAudioImporter/Private/Transcoders/FLACTranscoder.cpp
+C:\Unreal Projects\ArcSim\Plugins\RuntimeAudioImporter\Source\RuntimeAudioImporter\Public\RuntimeAudioImporterIncludes.h
+C:\Unreal Projects\ArcSim\Plugins\RuntimeAudioImporter\Source\ThirdParty/dr_flac.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\assert.h
+C:/Unreal Projects/ArcSim/Plugins/RuntimeAudioImporter/Source/RuntimeAudioImporter/Private/Transcoders/MP3Transcoder.cpp
+C:\Unreal Projects\ArcSim\Plugins\RuntimeAudioImporter\Source\RuntimeAudioImporter\Public\RuntimeAudioImporterIncludes.h
+C:\Unreal Projects\ArcSim\Plugins\RuntimeAudioImporter\Source\ThirdParty/dr_mp3.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\assert.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\math.h
+C:/Unreal Projects/ArcSim/Plugins/RuntimeAudioImporter/Source/RuntimeAudioImporter/Private/Transcoders/RAWTranscoder.cpp
+C:/Unreal Projects/ArcSim/Plugins/RuntimeAudioImporter/Source/RuntimeAudioImporter/Private/Transcoders/VorbisTranscoder.cpp
+C:\Unreal Projects\ArcSim\Plugins\RuntimeAudioImporter\Source\RuntimeAudioImporter\Public\RuntimeAudioImporterIncludes.h
+C:\Unreal Projects\ArcSim\Plugins\RuntimeAudioImporter\Source\ThirdParty/stb_vorbis.c
+C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\assert.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\math.h
+C:/Unreal Projects/ArcSim/Plugins/RuntimeAudioImporter/Source/RuntimeAudioImporter/Private/Transcoders/WAVTranscoder.cpp
+C:\Unreal Projects\ArcSim\Plugins\RuntimeAudioImporter\Source\RuntimeAudioImporter\Public\RuntimeAudioImporterIncludes.h
+C:\Unreal Projects\ArcSim\Plugins\RuntimeAudioImporter\Source\ThirdParty/dr_wav.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\assert.h

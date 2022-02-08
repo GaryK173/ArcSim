@@ -1,0 +1,3 @@
+C:\Unreal Projects\ArcSim\Intermediate\Build\Win64\UE4Editor\Development\ArcSim\Definitions.ArcSim.h
+C:\EpicGames\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
+C:\EpicGames\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h

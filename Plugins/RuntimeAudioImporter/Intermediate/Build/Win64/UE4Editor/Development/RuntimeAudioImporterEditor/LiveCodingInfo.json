@@ -1,0 +1,13 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.RuntimeAudioImporterEditor.cpp.obj": [
+			"PreImportedSoundFactory.cpp.obj",
+			"RuntimeAudioImporterEditor.cpp.obj"
+		],
+		"Module.RuntimeAudioImporterEditor.gen.cpp.obj": [
+			"PreImportedSoundFactory.gen.cpp.obj",
+			"RuntimeAudioImporterEditor.init.gen.cpp.obj"
+		]
+	}
+}

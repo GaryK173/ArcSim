@@ -1,0 +1,10 @@
+{
+	"SourceFiles": [
+		"C:\\Unreal Projects\\ArcSim\\Source\\ArcSim\\ArcSim.Build.cs",
+		"C:\\Unreal Projects\\ArcSim\\Plugins\\RuntimeAudioImporter\\Source\\RuntimeAudioImporterEditor\\RuntimeAudioImporterEditor.Build.cs",
+		"C:\\Unreal Projects\\ArcSim\\Plugins\\RuntimeAudioImporter\\Source\\RuntimeAudioImporter\\RuntimeAudioImporter.Build.cs",
+		"C:\\Unreal Projects\\ArcSim\\Source\\ArcSim.Target.cs",
+		"C:\\Unreal Projects\\ArcSim\\Source\\ArcSimEditor.Target.cs"
+	],
+	"EngineVersion": "4.27.2"
+}
