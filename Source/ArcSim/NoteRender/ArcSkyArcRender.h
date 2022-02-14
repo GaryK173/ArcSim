@@ -51,10 +51,10 @@ public:
 	UPROPERTY()
 		FVector SizeVoid = FVector(0.05, 0.025, -1.00);
 
-	UPROPERTY(BlueprintReadWrite)
+	UPROPERTY()
 		EArcLineType Type;
 
-	UPROPERTY(BlueprintReadWrite)
+	UPROPERTY()
 		EArcColor Color;
 
 	UPROPERTY()
@@ -125,7 +125,7 @@ public:
 
 	void UpdateHeightLine(bool isActive);
 
-	void UpdateCap();
+	void UpdateCap(bool isActive);
 
 	bool LocateCap();
 

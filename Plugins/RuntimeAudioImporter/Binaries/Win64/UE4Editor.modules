@@ -2,7 +2,7 @@
 	"BuildId": "17155196",
 	"Modules": 
 	{
-		"RuntimeAudioImporter": "UE4Editor-RuntimeAudioImporter.dll",
-		"RuntimeAudioImporterEditor": "UE4Editor-RuntimeAudioImporterEditor.dll"
+		"RuntimeAudioImporter": "UE4Editor-RuntimeAudioImporter-0071.dll",
+		"RuntimeAudioImporterEditor": "UE4Editor-RuntimeAudioImporterEditor-0071.dll"
 	}
 }

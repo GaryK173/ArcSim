@@ -96,6 +96,6 @@ float ArcAlgoLib::I(float start, float end, float TimeRatio) {
 
 float ArcAlgoLib::O(float start, float end, float TimeRatio) {
 
-	return start + (end - start) * (1 - FGenericPlatformMath::Sin(1.5707963f * TimeRatio));
+	return start + (end - start) * (1 - FGenericPlatformMath::Cos(1.5707963f * TimeRatio));
 
 }

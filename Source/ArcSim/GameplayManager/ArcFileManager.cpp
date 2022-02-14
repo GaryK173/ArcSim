@@ -136,7 +136,7 @@ bool ArcFileManager::ChartingMachine(AArcConductor* Conductor, TArray<FString>& 
 			FRegexMatcher MatcherTiming(PatternTiming, CurrLine);
 
 			FRegexMatcher MatcherTap(PatternTap, CurrLine);
-			FRegexMatcher MatcherHold(PatternTap, CurrLine);
+			FRegexMatcher MatcherHold(PatternHold, CurrLine);
 
 			FRegexMatcher MatcherArcVoid(PatternArcVoid, CurrLine);
 			FRegexMatcher MatcherArcVoidWithSkyTap(PatternArcVoidWithSkyTap, CurrLine);
@@ -602,7 +602,7 @@ bool ArcFileManager::ChartingMachine(AArcConductor* Conductor, TArray<FString>& 
 			FRegexMatcher MatcherTiming(PatternTiming, CurrLine);
 
 			FRegexMatcher MatcherTap(PatternTap, CurrLine);
-			FRegexMatcher MatcherHold(PatternTap, CurrLine);
+			FRegexMatcher MatcherHold(PatternHold, CurrLine);
 
 			FRegexMatcher MatcherArcVoid(PatternArcVoid, CurrLine);
 			FRegexMatcher MatcherArcVoidWithSkyTap(PatternArcVoidWithSkyTap, CurrLine);
@@ -1236,13 +1236,13 @@ void ArcFileManager::InitSkyArcByLine(AArcSkyArcRender* Note, FString& CurrLine,
 		return;
 	}
 
-	FString YStart = "";
+	FString XEnd = "";
 	while (CurrLine[0] != TCHAR(',')) {
-		YStart += CurrLine[0];
+		XEnd += CurrLine[0];
 		CurrLine.RemoveAt(0);
 	}
 	CurrLine.RemoveAt(0);
-	if (!FDefaultValueHelper::ParseFloat(YStart, Note->PosStart.Y)) {
+	if (!FDefaultValueHelper::ParseFloat(XEnd, Note->PosEnd.X)) {
 		Status = -1;
 		return;
 	}
@@ -1252,13 +1252,13 @@ void ArcFileManager::InitSkyArcByLine(AArcSkyArcRender* Note, FString& CurrLine,
 	}
 	CurrLine.RemoveAt(0);
 
-	FString XEnd = "";
+	FString YStart = "";
 	while (CurrLine[0] != TCHAR(',')) {
-		XEnd += CurrLine[0];
+		YStart += CurrLine[0];
 		CurrLine.RemoveAt(0);
 	}
 	CurrLine.RemoveAt(0);
-	if (!FDefaultValueHelper::ParseFloat(XEnd, Note->PosEnd.X)) {
+	if (!FDefaultValueHelper::ParseFloat(YStart, Note->PosStart.Y)) {
 		Status = -1;
 		return;
 	}

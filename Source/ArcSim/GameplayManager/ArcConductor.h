@@ -52,10 +52,10 @@ public:
 	float RefBPM = 100.00f;
 
 	UPROPERTY()
-	float Speed = 1.00f;
+	float Speed = 4.00f;
 
 	UPROPERTY()
-	float Velocity = 0.30f;
+	float Velocity = 0.10f;
 
 	UPROPERTY()
 	float AudioOffset = 0.00f;
@@ -76,10 +76,10 @@ public:
 	float TotalOffset = 0.00f;
 
 	UPROPERTY()
-	float NearDistStatic = -10.00f * ArcAlgoLib::Scale;
+	float NearDistStatic = 2.0 * -10.00f * ArcAlgoLib::Scale;
 
 	UPROPERTY()
-	float FarDistStatic = 10.00f * ArcAlgoLib::Scale;
+	float FarDistStatic = 2.0 * 10.00f * ArcAlgoLib::Scale;
 
 	UPROPERTY()
 	float JudgeDistStatic = 0.50f * ArcAlgoLib::Scale;
@@ -113,7 +113,7 @@ public:
 	//FString SoundPath = TEXT("C:/RythmeGames/osu!/Songs/347779 sakuzyo - Altale/Altale.mp3");
 
 	// Chart file path
-	FString ChartPath = FolderPath + TEXT("/3.aff");
+	FString ChartPath = FolderPath + TEXT("/2.aff");
 
 	bool UpdateFlag = false;
 

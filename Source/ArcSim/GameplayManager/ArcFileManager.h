@@ -51,8 +51,8 @@ namespace ArcFileManager {
 	const FRegexPattern PatternArcSoSo(TEXT("^(arc)\\([0-9]*\\,[0-9]*\\,[0-9\\.\\-]*\\,[0-9\\.\\-]*\\,(soso)\\,[0-9\\.\\-]*\\,[0-9\\.\\-]*\\,[0-9]*\\,[a-z]*\\,[a-z]*\\)"));
 
 	// Patterns for Tap & Hold
-	const FRegexPattern PatternTap(TEXT("^\\([0-9]*,[1-4]\\)\\;$"));
-	const FRegexPattern PatternHold(TEXT("^(hold)\\([0-9]*\\,[0-9]*\\,[1-4]\\)\\;$"));
+	const FRegexPattern PatternTap(TEXT("^\\([0-9]*,[1-4]\\);$"));
+	const FRegexPattern PatternHold(TEXT("^(hold)\\([0-9]*,[0-9]*,[1-4]\\);$"));
 
     bool ImportChartFile(AArcConductor* Conductor, const FString& ChartFilePath);
 

@@ -25,7 +25,7 @@ void EmptyLinkFunctionForGeneratedCodeArcSim_init() {}
 				SingletonFuncArray,
 				UE_ARRAY_COUNT(SingletonFuncArray),
 				PKG_CompiledIn | 0x00000000,
-				0xF05E4173,
+				0xBEBB8FEC,
 				0xE403A05E,
 				METADATA_PARAMS(nullptr, 0)
 			};

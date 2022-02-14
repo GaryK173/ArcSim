@@ -1,0 +1,13 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-RuntimeAudioImporter-0061.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"C:\Unreal Projects\ArcSim\Intermediate\Build\Win64\ArcSimEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"C:\Unreal Projects\ArcSim\Plugins\RuntimeAudioImporter\Intermediate\Build\Win64\UE4Editor\Development\RuntimeAudioImporter\Module.RuntimeAudioImporter.cpp.obj"
+"C:\Unreal Projects\ArcSim\Plugins\RuntimeAudioImporter\Intermediate\Build\Win64\UE4Editor\Development\RuntimeAudioImporter\Module.RuntimeAudioImporter.gen.cpp.obj"
+"C:\Unreal Projects\ArcSim\Plugins\RuntimeAudioImporter\Intermediate\Build\Win64\UE4Editor\Development\RuntimeAudioImporter\Default.rc2.res"
+/OUT:"C:\Unreal Projects\ArcSim\Plugins\RuntimeAudioImporter\Intermediate\Build\Win64\UE4Editor\Development\RuntimeAudioImporter\UE4Editor-RuntimeAudioImporter-0061.lib"

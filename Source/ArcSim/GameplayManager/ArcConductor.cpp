@@ -101,7 +101,7 @@ void AArcConductor::InitNote() {
 	// Sort notes by TimeStart
 	for (auto& NoteSet : NoteRenders) {
 
-		NoteSet.Sort([](const AArcNoteRender& a, AArcNoteRender& b) { return a.TimeStart < b.TimeStart; });
+		NoteSet.Sort([](const auto& a, const auto& b) -> bool { return a.TimeStart < b.TimeStart; });
 
 	}
 
@@ -110,7 +110,7 @@ void AArcConductor::InitNote() {
 
 		TArray<AArcNoteRender*>& ArcSet = NoteRenders[ArcSetIdx];
 
-		for (AArcNoteRender* Arc : ArcSet) {
+		for (auto& Arc : ArcSet) {
 
 			for (int32 CompSetIdx = 6; CompSetIdx <= 8; ++CompSetIdx) {
 
@@ -121,7 +121,7 @@ void AArcConductor::InitNote() {
 					continue;
 				}
 				AArcNoteRender* ConnectArc = CompSet[ConnectIdx];
-				if (ConnectArc->TimeEnd + 10 >= Arc->TimeStart || ConnectArc->PosEnd.Y != Arc->PosStart.Y || FGenericPlatformMath::Abs(ConnectArc->PosEnd.X - Arc->PosStart.X) >= 0.10f) {
+				if (ConnectArc->TimeEnd + 10 <= Arc->TimeStart || ConnectArc->PosEnd.Y != Arc->PosStart.Y || FGenericPlatformMath::Abs(ConnectArc->PosEnd.X - Arc->PosStart.X) >= 0.10f) {
 					continue;
 				}
 				else {

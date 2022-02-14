@@ -78,14 +78,33 @@ void AArcSkyArcRender::InitMesh() {
 
 	SetActorLocation(PosStart * ArcAlgoLib::Scale);
 
+	if (Color == EArcColor::Void) {
+		GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Yellow, TEXT("Void"));
+	}
+	if (Color == EArcColor::Blue) {
+		GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Blue, TEXT("Blue"));
+	}
+	if (Color == EArcColor::Red) {
+		GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Red, TEXT("Red"));
+	}
+	if (Color == EArcColor::Green) {
+		GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Green, TEXT("Green"));
+	}
+
+	SetActorHiddenInGame(false);
+	Mesh->SetVisibility(true);
+
 }
 
 void AArcSkyArcRender::UpdateMesh(bool isActive) {
 
-	UpdateCap();
+	UpdateCap(isActive);
 	UpdateSegment(isActive);
 	//UpdateShadow(isActive);
 	UpdateHeightLine(isActive);
+	if (Triggered && Conductor->TimeDspCurr > TimeEnd) {
+		SetActive(false);
+	}
 	return;
 
 }
@@ -112,30 +131,21 @@ void AArcSkyArcRender::InitSegment() {
 
 	// Params of generating & updating segments were inspired by Arcade
 
-	switch (Color)
-	{
-	case EArcColor::Void:
-	{
+	if (Color == EArcColor::Void) {
 		MaterialBase = MaterialBaseVoid;
 		Size = SizeVoid;
 	}
-	case EArcColor::Red:
-	{
-		MaterialBase = MaterialBaseRed;
-		Size = SizeColor;
-	}
-	case EArcColor::Blue:
-	{
+	if (Color == EArcColor::Blue) {
 		MaterialBase = MaterialBaseBlue;
 		Size = SizeColor;
 	}
-	case EArcColor::Green:
-	{
-		MaterialBase = MaterialBaseGreen;
+	if (Color == EArcColor::Red) {
+		MaterialBase = MaterialBaseRed;
 		Size = SizeColor;
 	}
-	default:
-		break;
+	if (Color == EArcColor::Green) {
+		MaterialBase = MaterialBaseGreen;
+		Size = SizeColor;
 	}
 
 	Material = UMaterialInstanceDynamic::Create(MaterialBase, RootComponent);
@@ -161,11 +171,13 @@ void AArcSkyArcRender::InitSegment() {
 
 		CurrStart = CurrEnd;
 		CalculateZByTime(CurrStart.Z, TimePrefix);
+		CurrStart.Z /= ArcAlgoLib::Scale;
 
 		TimePrefix += (float)SegSize;
 		TimePrefix = FGenericPlatformMath::Min(TimePrefix, Duration);
 		ArcAlgoLib::CalculateRelativePositionByArcType(Type, PosStart, PosEnd, (float)TimePrefix / Duration, CurrEnd);
 		CalculateZByTime(CurrEnd.Z, TimePrefix);
+		CurrEnd.Z /= ArcAlgoLib::Scale;
 
 		Vertices.Add((CurrStart + FVector(Size.X / -2.0, Size.Y / -2.0, 0.0)) * ArcAlgoLib::Scale);
 		Vertices.Add((CurrStart + FVector(Size.X / 2.0, Size.Y / -2.0, 0.0)) * ArcAlgoLib::Scale);
@@ -359,28 +371,6 @@ void AArcSkyArcRender::UpdateSegment(bool isActive) {
 		Section->ProcVertexBuffer[2].Position = (CapRelativePos + FVector(0.0, Size.Y / 2.0, 0.0)) * ArcAlgoLib::Scale;
 		Mesh->SetProcMeshSection(CurrOverlapSeg, *Section);
 
-		/*for (int32 Segment = 0; Segment < SegCount; ++Segment) {
-
-			FProcMeshSection* Section = Mesh->GetProcMeshSection(Segment);
-			if (!Mesh->IsMeshSectionVisible(Segment)) {
-				continue;
-			}
-			else if (Section->ProcVertexBuffer[5].Position.Z < 0.00f) {
-				Mesh->SetMeshSectionVisible(Segment, false);
-				continue;
-			}
-			else {
-
-				Section->ProcVertexBuffer[0].Position += (Section->ProcVertexBuffer[3].Position - Section->ProcVertexBuffer[0].Position) * (float)((-Location.Z - Section->ProcVertexBuffer[0].Position.Z) / (Section->ProcVertexBuffer[3].Position.Z - Section->ProcVertexBuffer[0].Position.Z));
-				Section->ProcVertexBuffer[1].Position += (Section->ProcVertexBuffer[4].Position - Section->ProcVertexBuffer[1].Position) * (float)((-Location.Z - Section->ProcVertexBuffer[1].Position.Z) / (Section->ProcVertexBuffer[4].Position.Z - Section->ProcVertexBuffer[1].Position.Z));
-				Section->ProcVertexBuffer[2].Position += (Section->ProcVertexBuffer[5].Position - Section->ProcVertexBuffer[2].Position) * (float)((-Location.Z - Section->ProcVertexBuffer[2].Position.Z) / (Section->ProcVertexBuffer[5].Position.Z - Section->ProcVertexBuffer[2].Position.Z));
-				Mesh->SetProcMeshSection(Segment, *Section);
-				break;
-
-			}
-
-		}*/
-
 	}
 
 }
@@ -413,16 +403,20 @@ void AArcSkyArcRender::UpdateShadow(bool isActive) {
 
 void AArcSkyArcRender::UpdateHeightLine(bool isActive) {}
 
-void AArcSkyArcRender::UpdateCap() {
+void AArcSkyArcRender::UpdateCap(bool isActive) {
 
 	if (TimeEnd - TimeStart == 0) {
 		CapMesh->SetVisibility(false);
 	}
 	else {
-		if (!LocateCap()) {
+		if (!isActive) {
+			CapMesh->SetVisibility(false);
 			return;
 		}
-		else if (Conductor->TimeDspCurr >= TimeStart || Conductor->TimeDspCurr <= TimeEnd) {
+		else if (!LocateCap()) {
+			return;
+		}
+		else if (Conductor->TimeDspCurr >= TimeStart && Conductor->TimeDspCurr <= TimeEnd) {
 			CapMesh->SetVisibility(true);
 			CapMesh->SetRelativeLocation(CapRelativePos * ArcAlgoLib::Scale);
 		}
@@ -435,17 +429,23 @@ void AArcSkyArcRender::UpdateCap() {
 			ratio = ratio <= 1.0 ? ratio : 1.0;
 			ratio = ratio >= 0.0 ? ratio : 0.0;
 
-			float Scale = 1 + ratio;
+			float Scale = 1.0 + 2 * ratio;
 
 			CapMaterial->SetVectorParameterValue(FName("CapTrans"), FLinearColor(0.0, 0.0, 0.0, (1.0 - ratio)));
 			
 			FProcMeshSection* Section = CapMesh->GetProcMeshSection(0);
 
-			for (int32 i = 0; i < Section->ProcVertexBuffer.Num(); ++ i) {
+			Section->ProcVertexBuffer[0].Position = Scale * FVector(CapSize.X / -2.0, CapSize.Y / -2.0, 0.0) * ArcAlgoLib::Scale;
+			Section->ProcVertexBuffer[1].Position = Scale * FVector(CapSize.X / 2.0, CapSize.Y / -2.0, 0.0) * ArcAlgoLib::Scale;
+			Section->ProcVertexBuffer[2].Position = Scale * FVector(CapSize.X / 2.0, CapSize.Y / 2.0, 0.0) * ArcAlgoLib::Scale;
+			Section->ProcVertexBuffer[3].Position = Scale * FVector(CapSize.X / -2.0, CapSize.Y / 2.0, 0.0) * ArcAlgoLib::Scale;
 
-				Section->ProcVertexBuffer[i].Position *= Scale;
 
-			}
+			//for (int32 i = 0; i < Section->ProcVertexBuffer.Num(); ++ i) {
+
+			//	Section->ProcVertexBuffer[i].Position.X 
+
+			//}
 
 			CapMesh->SetProcMeshSection(0, *Section);
 
@@ -459,9 +459,9 @@ void AArcSkyArcRender::UpdateCap() {
 
 bool AArcSkyArcRender::LocateCap() {
 	
-	//if (Conductor->TimeDspCurr < TimeStart) {
-	//	return true;
-	//}
+	if (Conductor->TimeDspCurr < TimeStart) {
+		return true;
+	}
 
 	CurrOverlapSeg = Algo::LowerBoundBy(BodySegments, Conductor->TimeDspCurr - TimeStart, UE_PROJECTION(FArcSegment::ForComp));
 	if (!BodySegments.IsValidIndex(CurrOverlapSeg)) {
@@ -470,9 +470,9 @@ bool AArcSkyArcRender::LocateCap() {
 	}
 
 	int32 Duration = (TimeEnd - TimeStart) < 1000 ? (1000 / 14) : (1000 / 7);
-	CapRelativePos = BodySegments[CurrOverlapSeg].RelativePosStart + (BodySegments[CurrOverlapSeg].RelativePosEnd - BodySegments[CurrOverlapSeg].RelativePosStart) * (Conductor->TimeDspCurr - BodySegments[CurrOverlapSeg].TimeEnd + Duration) / Duration;
-	CapPos = CapRelativePos + PosStart;
-	CapPos *= ArcAlgoLib::Scale;
+	CapRelativePos = BodySegments[CurrOverlapSeg].RelativePosStart + (BodySegments[CurrOverlapSeg].RelativePosEnd - BodySegments[CurrOverlapSeg].RelativePosStart) * (float)(Conductor->TimeDspCurr - TimeStart - BodySegments[CurrOverlapSeg].TimeEnd + (float)Duration) / (float)Duration;
+	CapPos = (CapRelativePos + PosStart) * ArcAlgoLib::Scale;
+	//CapPos *= ArcAlgoLib::Scale;
 	CapPos.Z = 0;
 	return true;
 

@@ -29,6 +29,7 @@ void AArcHoldRender::InitMesh() {
 	TArray<FVector2D> UVs;
 
 	float Length = CalculateLength();
+	Length /= ArcAlgoLib::Scale;
 
 	Vertices.Add(FVector(Size.X / -2.0, Size.Y, 0.0) * ArcAlgoLib::Scale);
 	Vertices.Add(FVector(Size.X / 2.0, Size.Y, 0.0) * ArcAlgoLib::Scale);

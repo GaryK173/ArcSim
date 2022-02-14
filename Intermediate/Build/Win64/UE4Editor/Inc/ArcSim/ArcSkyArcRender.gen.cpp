@@ -161,19 +161,17 @@ void EmptyLinkFunctionForGeneratedCodeArcSkyArcRender() {}
 	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_AArcSkyArcRender_Statics::NewProp_Type_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AArcSkyArcRender_Statics::NewProp_Type_MetaData[] = {
-		{ "Category", "ArcSkyArcRender" },
 		{ "ModuleRelativePath", "NoteRender/ArcSkyArcRender.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UClass_AArcSkyArcRender_Statics::NewProp_Type = { "Type", nullptr, (EPropertyFlags)0x0010000000000004, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AArcSkyArcRender, Type), Z_Construct_UEnum_ArcSim_EArcLineType, METADATA_PARAMS(Z_Construct_UClass_AArcSkyArcRender_Statics::NewProp_Type_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AArcSkyArcRender_Statics::NewProp_Type_MetaData)) };
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UClass_AArcSkyArcRender_Statics::NewProp_Type = { "Type", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AArcSkyArcRender, Type), Z_Construct_UEnum_ArcSim_EArcLineType, METADATA_PARAMS(Z_Construct_UClass_AArcSkyArcRender_Statics::NewProp_Type_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AArcSkyArcRender_Statics::NewProp_Type_MetaData)) };
 	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_AArcSkyArcRender_Statics::NewProp_Color_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AArcSkyArcRender_Statics::NewProp_Color_MetaData[] = {
-		{ "Category", "ArcSkyArcRender" },
 		{ "ModuleRelativePath", "NoteRender/ArcSkyArcRender.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UClass_AArcSkyArcRender_Statics::NewProp_Color = { "Color", nullptr, (EPropertyFlags)0x0010000000000004, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AArcSkyArcRender, Color), Z_Construct_UEnum_ArcSim_EArcColor, METADATA_PARAMS(Z_Construct_UClass_AArcSkyArcRender_Statics::NewProp_Color_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AArcSkyArcRender_Statics::NewProp_Color_MetaData)) };
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UClass_AArcSkyArcRender_Statics::NewProp_Color = { "Color", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AArcSkyArcRender, Color), Z_Construct_UEnum_ArcSim_EArcColor, METADATA_PARAMS(Z_Construct_UClass_AArcSkyArcRender_Statics::NewProp_Color_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AArcSkyArcRender_Statics::NewProp_Color_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AArcSkyArcRender_Statics::NewProp_IsHead_MetaData[] = {
 		{ "ModuleRelativePath", "NoteRender/ArcSkyArcRender.h" },
@@ -315,7 +313,7 @@ void EmptyLinkFunctionForGeneratedCodeArcSkyArcRender() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AArcSkyArcRender, 381747079);
+	IMPLEMENT_CLASS(AArcSkyArcRender, 1058432365);
 	template<> ARCSIM_API UClass* StaticClass<AArcSkyArcRender>()
 	{
 		return AArcSkyArcRender::StaticClass();

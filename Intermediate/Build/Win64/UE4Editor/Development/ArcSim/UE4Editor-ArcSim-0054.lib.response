@@ -1,0 +1,32 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-ArcSim-0054.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"C:\Unreal Projects\ArcSim\Intermediate\Build\Win64\ArcSimEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"C:\Unreal Projects\ArcSim\Intermediate\Build\Win64\UE4Editor\Development\ArcSim\ArcAlgoLib.cpp.obj"
+"C:\Unreal Projects\ArcSim\Intermediate\Build\Win64\UE4Editor\Development\ArcSim\ArcConductor.cpp.obj"
+"C:\Unreal Projects\ArcSim\Intermediate\Build\Win64\UE4Editor\Development\ArcSim\ArcFileManager.cpp.obj"
+"C:\Unreal Projects\ArcSim\Intermediate\Build\Win64\UE4Editor\Development\ArcSim\ArcHoldRender.cpp.obj"
+"C:\Unreal Projects\ArcSim\Intermediate\Build\Win64\UE4Editor\Development\ArcSim\ArcNoteRender.cpp.obj"
+"C:\Unreal Projects\ArcSim\Intermediate\Build\Win64\UE4Editor\Development\ArcSim\ArcSkyArcRender.cpp.obj"
+"C:\Unreal Projects\ArcSim\Intermediate\Build\Win64\UE4Editor\Development\ArcSim\ArcSkyTapRender.cpp.obj"
+"C:\Unreal Projects\ArcSim\Intermediate\Build\Win64\UE4Editor\Development\ArcSim\ArcTapRender.cpp.obj"
+"C:\Unreal Projects\ArcSim\Intermediate\Build\Win64\UE4Editor\Development\ArcSim\ArcSim.cpp.obj"
+"C:\Unreal Projects\ArcSim\Intermediate\Build\Win64\UE4Editor\Development\ArcSim\ArcSimGameModeBase.cpp.obj"
+"C:\Unreal Projects\ArcSim\Intermediate\Build\Win64\UE4Editor\Development\ArcSim\ArcColor.gen.cpp.obj"
+"C:\Unreal Projects\ArcSim\Intermediate\Build\Win64\UE4Editor\Development\ArcSim\ArcConductor.gen.cpp.obj"
+"C:\Unreal Projects\ArcSim\Intermediate\Build\Win64\UE4Editor\Development\ArcSim\ArcHoldRender.gen.cpp.obj"
+"C:\Unreal Projects\ArcSim\Intermediate\Build\Win64\UE4Editor\Development\ArcSim\ArcLineType.gen.cpp.obj"
+"C:\Unreal Projects\ArcSim\Intermediate\Build\Win64\UE4Editor\Development\ArcSim\ArcNoteRender.gen.cpp.obj"
+"C:\Unreal Projects\ArcSim\Intermediate\Build\Win64\UE4Editor\Development\ArcSim\ArcSim.init.gen.cpp.obj"
+"C:\Unreal Projects\ArcSim\Intermediate\Build\Win64\UE4Editor\Development\ArcSim\ArcSimGameModeBase.gen.cpp.obj"
+"C:\Unreal Projects\ArcSim\Intermediate\Build\Win64\UE4Editor\Development\ArcSim\ArcSkyArcRender.gen.cpp.obj"
+"C:\Unreal Projects\ArcSim\Intermediate\Build\Win64\UE4Editor\Development\ArcSim\ArcSkyTapRender.gen.cpp.obj"
+"C:\Unreal Projects\ArcSim\Intermediate\Build\Win64\UE4Editor\Development\ArcSim\ArcTapRender.gen.cpp.obj"
+"C:\Unreal Projects\ArcSim\Intermediate\Build\Win64\UE4Editor\Development\ArcSim\ArcTiming.gen.cpp.obj"
+"C:\Unreal Projects\ArcSim\Intermediate\Build\Win64\UE4Editor\Development\ArcSim\Default.rc2.res"
+/OUT:"C:\Unreal Projects\ArcSim\Intermediate\Build\Win64\UE4Editor\Development\ArcSim\UE4Editor-ArcSim-0054.lib"
